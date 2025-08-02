@@ -1,5 +1,9 @@
 {% extends "layout.html" %}
-{% block title %}Home{% endblock %}
+
+{% block title %}Home - Wikipedia App{% endblock %}
+
 {% block content %}
-    <p>This is the home page. It's not exciting yet...</p>
+    <h1>Welcome to the Wikipedia Search Site</h1>
+    <p>This site lets you search Wikipedia and view summaries instantly.</p>
+    <a href="{{ url_for('search') }}">Start Searching</a>
 {% endblock %}
